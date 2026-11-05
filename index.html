@@ -87,6 +87,14 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .squad-ico{height:clamp(52px,14vw,64px)!important}
 .logo-mark{height:clamp(58px,15vw,74px)!important}
 .logo-name{font-size:clamp(1.25rem,5.4vw,1.8rem)!important}
+.hero-top{display:flex;align-items:center;gap:clamp(16px,4vw,32px);margin-bottom:22px}
+.hero-top .hero-logo{margin:0}
+.hero-areas .area-tag{white-space:nowrap;padding:6px 14px;font-size:.88rem}
+.hero-areas{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.hero-areas span{font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.group-note{margin:-6px 0 22px;color:var(--muted);font-size:1.02rem;max-width:62ch}
+.hero .in{align-items:start!important}
+@media(min-width:900px){.hero .in>aside{padding-top:8px}}
 .hero-logo{display:block;height:clamp(250px,64vw,290px);width:auto;margin:0 0 22px}
 .hero::before{display:none!important}
 .hl{color:var(--accent-text)}
@@ -294,8 +302,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
   <div class="hero">
     <div class="in">
       <div>
-        <img class="hero-logo" src="hero-shield.png" alt="DMV Setup Squad logo: Packing, Moving, TV Mounting, Furniture Assembly" width="640" height="763">
-        <p class="eyebrow"><span class="dot"></span>Washington DC · Maryland · Virginia</p>
+        <div class="hero-top"><img class="hero-logo" src="hero-shield.png" alt="DMV Setup Squad logo: Packing, Moving, TV Mounting, Furniture Assembly" width="640" height="763"><div class="hero-areas" aria-label="Areas we serve"><span>We serve</span><b class="area-tag">Washington DC</b><b class="area-tag">Maryland</b><b class="area-tag">Virginia</b></div></div>
         <h1 class="hero-q">Moving or <span class="hl">setting up?</span></h1>
         <p class="lead hero-a">A few friends who pack, move, mount TVs and build furniture.</p>
         <p class="squad-line"><svg class="squad-ico" viewBox="0 0 200 92" role="img" aria-label="Four friends standing together" xmlns="http://www.w3.org/2000/svg"><g><circle cx="28" cy="27" r="13" fill="#0D5450"/><path d="M8,90 V56 Q8,43 21,43 H35 Q48,43 48,56 V90 Z" fill="#0D5450"/><circle cx="76" cy="21" r="14" fill="#2DA093"/><path d="M55,90 V52 Q55,38 69,38 H83 Q97,38 97,52 V90 Z" fill="#2DA093"/><circle cx="124" cy="21" r="14" fill="#D9A566"/><path d="M103,90 V52 Q103,38 117,38 H131 Q145,38 145,52 V90 Z" fill="#D9A566"/><circle cx="172" cy="27" r="13" fill="#0A3F3C"/><path d="M152,90 V56 Q152,43 165,43 H179 Q192,43 192,56 V90 Z" fill="#0A3F3C"/></g></svg><span>A few friends. One squad.</span></p>
@@ -466,6 +473,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
       </div>
 
       <h2 class="group-label" id="business-s" style="margin-top:52px"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg>For your business and events</h2>
+      <p class="group-note">Offices and events get the same squad: a few friends who work together, with one contact for the whole job.</p>
       <div class="cards">
         <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div><h3>Office moves</h3><p>Move your office with less downtime.</p>
           <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Desks, chairs, files and equipment packed and labeled</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Loading, carrying and unloading</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Furniture placed where you need it</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Early-morning and evening times available</li></ul>
@@ -487,7 +495,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
           <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open every day, 5 AM – 11 PM</span></div>
           <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>One contact for the whole job</span></div>
           <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg><span>Clear quote before work starts</span></div>
-          <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/></svg><span>Same crew from start to finish</span></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/></svg><span>A few friends, one team</span></div>
         </div>
       </div>
 
