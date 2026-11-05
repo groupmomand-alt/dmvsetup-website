@@ -296,6 +296,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
 }
 
 /* business section */
+.svc4 .biz-card{grid-column:1/-1}
 .area-live{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:10px 16px;margin-top:16px;width:fit-content;max-width:100%;box-shadow:0 2px 8px rgba(13,84,80,.07)}
 .area-live .al-t{font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .area-live b{background:var(--tint);color:var(--head);font-weight:700;border-radius:999px;padding:5px 13px;font-size:.9rem;white-space:nowrap}
@@ -303,7 +304,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
 .biz-mini>div{background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:16px}
 .biz-mini b{display:block;color:var(--head);font-family:var(--display);font-weight:800;font-size:1.05rem;line-height:1.2}
 .biz-mini span{display:block;color:var(--muted);font-size:.93rem;margin-top:6px}
-.home-biz .biz-why{margin-top:22px}
+@media(max-width:520px){.area-live{padding:0;border:0;box-shadow:none;background:none;gap:6px;flex-wrap:nowrap}.area-live .al-t{display:none}.area-live b{font-size:.8rem;padding:5px 10px}}
 .biz-intro{background:var(--surface);border:2px solid var(--line);border-left:6px solid var(--head);border-radius:14px;padding:clamp(20px,3vw,30px);margin:6px 0 22px;display:grid;gap:12px}
 .biz-intro h3{font-size:clamp(1.45rem,3.4vw,2rem)}
 .biz-intro p{color:var(--muted);font-size:1.05rem;max-width:62ch}
@@ -374,7 +375,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
         <div class="area-live" aria-label="Areas we serve"><span class="dot"></span><span class="al-t">We serve</span><b>Washington DC</b><b>Maryland</b><b>Virginia</b></div>
         <p class="squad-line"><svg class="squad-ico" viewBox="0 0 200 92" role="img" aria-label="Four friends standing together" xmlns="http://www.w3.org/2000/svg"><g><circle cx="28" cy="27" r="13" fill="#0D5450"/><path d="M8,90 V56 Q8,43 21,43 H35 Q48,43 48,56 V90 Z" fill="#0D5450"/><circle cx="76" cy="21" r="14" fill="#2DA093"/><path d="M55,90 V52 Q55,38 69,38 H83 Q97,38 97,52 V90 Z" fill="#2DA093"/><circle cx="124" cy="21" r="14" fill="#D9A566"/><path d="M103,90 V52 Q103,38 117,38 H131 Q145,38 145,52 V90 Z" fill="#D9A566"/><circle cx="172" cy="27" r="13" fill="#0A3F3C"/><path d="M152,90 V56 Q152,43 165,43 H179 Q192,43 192,56 V90 Z" fill="#0A3F3C"/></g></svg><span>A few friends. One squad.</span></p>
         <div class="actions">
-          <a class="btn btn-main" href="#contact">Get a free quote</a>
+          <a class="btn btn-main" href="#contact">Get a quote</a>
           <a class="btn btn-line" href="#services-page" data-nav="services">See all services</a>
         </div>
       </div>
@@ -405,40 +406,16 @@ footer .in{display:grid;gap:20px;padding-block:36px}
           <p>IKEA, Wayfair, Amazon and more, built for you.</p>
           <span class="arrow">Learn more →</span>
         </a>
+        <a class="qs-card biz-card" href="#services-page" data-nav="services" data-anchor="business-s" style="align-items:center;text-align:center">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span>
+          <h3>Business &amp; Events</h3>
+          <p>Office moves, furniture assembly, trade-show booths and events, with minimal downtime.</p>
+          <span class="arrow">Learn more →</span>
+        </a>
       </div>
       </aside>
     </div>
   </div>
-
-  <!-- Business & events -->
-  <section class="sec home-biz" style="border-bottom:1px solid var(--line)">
-    <div class="in" style="padding-block:clamp(32px,5vw,56px)">
-      <p style="font-weight:700;color:var(--muted);font-size:.88rem;text-transform:uppercase;letter-spacing:.07em;margin-bottom:14px">For your business and events</p>
-      <div class="biz-intro">
-        <h3>Office moves and setup with minimal downtime</h3>
-        <p>We plan every business job around your schedule. Early mornings, evenings or late nights, your team keeps working while we do the heavy lifting.</p>
-        <div class="biz-actions">
-          <a class="btn btn-main" href="#contact" data-service="Office or event setup" data-nav-contact>Request a business quote</a>
-          <a class="btn btn-line" href="#services-page" data-nav="services" data-anchor="business-s">See business services</a>
-        </div>
-      </div>
-      <div class="biz-mini">
-        <div><b>Office moves</b><span>Packed, carried and placed with minimal disruption.</span></div>
-        <div><b>Office furniture assembly</b><span>Desks, workstations, chairs and shelves, built and ready.</span></div>
-        <div><b>Trade-show booths</b><span>Setup before the show opens, take-down after it closes.</span></div>
-        <div><b>Corporate events</b><span>Setup and take-down for meetings, events and venues.</span></div>
-      </div>
-      <div class="biz-why">
-        <h3>Why businesses choose us</h3>
-        <div class="biz-why-grid">
-          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><p><b>Minimal downtime</b><span class="t">We schedule around your business, so the work happens before you open or after you close.</span></p></div>
-          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><p><b>Early and late availability</b><span class="t">Our usual hours are 5 AM to 11 PM, but we can work earlier or later when you need it.</span></p></div>
-          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><p><b>One point of contact</b><span class="t">You talk to one of us from the first call to the finished job. No call centers, no runaround.</span></p></div>
-          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></span><p><b>Reliable and clearly quoted</b><span class="t">A clear quote before work starts, and a crew that arrives when we say we will.</span></p></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact on home -->
   <section id="contact" class="home-contact" style="scroll-margin-top:84px">
@@ -449,21 +426,22 @@ footer .in{display:grid;gap:20px;padding-block:36px}
         <p class="contact-line"><a class="cl-ph" href="tel:+12025053133" aria-label="Call (202) 505-3133">(202) 505-3133</a><span class="cl-alt"><a href="sms:+12025053133">Text</a> · <a href="mailto:info@dmvsetup.com">Email</a></span></p>
       </div>
       <form class="form" id="callback" novalidate>
-        <h2>Request a free quote</h2>
+        <h2>Tell us what you need</h2>
         <div class="fields">
           <div class="two">
             <label>Your name<input name="name" autocomplete="name" required></label>
             <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(202) 555-0123"></label>
           </div>
           <div class="two">
-            <label><span>What do you need? <small>(optional)</small></span>
+            <label><span>Email <small>(optional)</small></span><input name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com"></label>
+            <label><span>ZIP code or city <small>(optional)</small></span><input name="location" autocomplete="postal-code" placeholder="e.g. 20001"></label>
+          </div>
+          <label><span>What do you need? <small>(optional)</small></span>
               <select name="service">
                 <option value="">Choose a service</option>
                 <option>Moving help</option><option>Packing</option><option>Furniture assembly</option><option>TV mounting</option><option>Office or event setup</option><option>More than one service</option>
               </select>
             </label>
-            <label><span>ZIP code or city <small>(optional)</small></span><input name="location" autocomplete="postal-code" placeholder="e.g. 20001"></label>
-          </div>
           <p class="err" id="err" role="alert" hidden></p>
           <button class="btn btn-main" type="submit">Send request</button>
         </div>
@@ -700,7 +678,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
 
 <nav class="bar" aria-label="Contact us">
   <a class="btn btn-line" href="tel:+12025053133"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call</a>
-  <a class="btn btn-main" href="#contact" data-nav-contact>Free quote</a>
+  <a class="btn btn-main" href="#contact" data-nav-contact>Get a quote</a>
 </nav>
 
 <script>
@@ -775,10 +753,11 @@ function safePush(h){try{history.pushState(null,'',h);}catch(e){try{location.has
   var f=document.getElementById('callback'), err=document.getElementById('err');
   f.addEventListener('submit',function(e){
     e.preventDefault();
-    var first=null, msgs=[];
+    var first=null, msgs=[], email=f.elements.email.value.trim();
     function check(el,bad,msg){el.setAttribute('aria-invalid',bad?'true':'false');if(bad){msgs.push(msg);if(!first)first=el;}}
     check(f.elements.name,f.elements.name.value.trim()==='','Please add your name.');
     check(f.elements.phone,f.elements.phone.value.replace(/\D/g,'').length<10,'Please add a 10-digit phone number.');
+    check(f.elements.email,email!==''&&!/^\S+@\S+\.\S+$/.test(email),'Please check your email address.');
     if(first){err.textContent=msgs.join(' ');err.hidden=false;first.focus();document.getElementById('thanks').hidden=true;return;}
     err.hidden=true;
     var btn=f.querySelector('button[type="submit"]'), th=document.getElementById('thanks');
@@ -789,9 +768,11 @@ function safePush(h){try{history.pushState(null,'',h);}catch(e){try{location.has
     d.append('from_name','DMV Setup Squad website');
     d.append('name',f.elements.name.value.trim());
     d.append('phone',f.elements.phone.value.trim());
+    d.append('email_address',email||'(not given)');
     d.append('service',f.elements.service.value||'(not chosen)');
     d.append('zip_or_city',f.elements.location.value.trim()||'(not given)');
     d.append('botcheck','');
+    if(email) d.append('replyto',email);
     fetch('https://api.web3forms.com/submit',{method:'POST',body:d})
       .then(function(r){return r.json();})
       .then(function(j){
