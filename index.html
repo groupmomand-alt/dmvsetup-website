@@ -10,6 +10,9 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="DMV Setup Squad shield logo with packing, moving, TV mounting and furniture assembly">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L869YH8BET"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L869YH8BET');</script>
 </head><body>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="color-scheme" content="light">
@@ -765,7 +768,7 @@ function safePush(h){try{history.pushState(null,'',h);}catch(e){try{location.has
     fetch('https://api.web3forms.com/submit',{method:'POST',body:d})
       .then(function(r){return r.json();})
       .then(function(j){
-        if(j&&j.success){f.reset();th.firstChild.nodeValue='Thank you! We will contact you soon.';th.hidden=false;}
+        if(j&&j.success){f.reset();th.firstChild.nodeValue='Thank you! We will contact you soon.';th.hidden=false;window.location.href='/thank-you';}
         else{throw new Error('fail');}
       })
       .catch(function(){err.textContent='Sorry, it did not send. Please call (202) 505-3133.';err.hidden=false;})
