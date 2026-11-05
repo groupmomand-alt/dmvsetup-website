@@ -81,6 +81,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .squad-line{display:flex;align-items:center;gap:12px;margin-top:16px;font-weight:700;color:var(--head);font-size:1rem}
 .squad-ico{height:38px;width:auto;flex:none}
 .about-squad{width:min(240px,70%);height:auto;display:block;margin-bottom:16px}
+.hero-q{white-space:nowrap;font-size:clamp(2.1rem,9vw,3.6rem)}
+.hero-a{font-size:clamp(1.05rem,4.4vw,1.35rem);max-width:none}
+.squad-line{font-size:clamp(1.15rem,4.6vw,1.45rem)!important;margin-top:20px!important}
+.squad-ico{height:clamp(52px,14vw,64px)!important}
+.logo-mark{height:clamp(58px,15vw,74px)!important}
+.logo-name{font-size:clamp(1.25rem,5.4vw,1.8rem)!important}
 .hero-logo{display:block;height:clamp(250px,64vw,290px);width:auto;margin:0 0 22px}
 .hero::before{display:none!important}
 .hl{color:var(--accent-text)}
@@ -290,9 +296,9 @@ footer .in{display:grid;gap:20px;padding-block:36px}
       <div>
         <img class="hero-logo" src="hero-shield.png" alt="DMV Setup Squad logo: Packing, Moving, TV Mounting, Furniture Assembly" width="640" height="763">
         <p class="eyebrow"><span class="dot"></span>Washington DC · Maryland · Virginia</p>
-        <h1>Moving, or setting up a <span class="hl">new space?</span></h1>
-        <p class="lead">Packing, moving help, TV mounting and furniture assembly for homes and businesses.</p>
-        <p class="squad-line"><svg class="squad-ico" viewBox="0 0 200 92" role="img" aria-label="Four friends standing together" xmlns="http://www.w3.org/2000/svg"><g><circle cx="28" cy="27" r="13" fill="#0D5450"/><path d="M8,90 V56 Q8,43 21,43 H35 Q48,43 48,56 V90 Z" fill="#0D5450"/><circle cx="76" cy="21" r="14" fill="#2DA093"/><path d="M55,90 V52 Q55,38 69,38 H83 Q97,38 97,52 V90 Z" fill="#2DA093"/><circle cx="124" cy="21" r="14" fill="#D9A566"/><path d="M103,90 V52 Q103,38 117,38 H131 Q145,38 145,52 V90 Z" fill="#D9A566"/><circle cx="172" cy="27" r="13" fill="#0A3F3C"/><path d="M152,90 V56 Q152,43 165,43 H179 Q192,43 192,56 V90 Z" fill="#0A3F3C"/></g></svg><span>A few friends. One squad. Here to help.</span></p>
+        <h1 class="hero-q">Moving or <span class="hl">setting up?</span></h1>
+        <p class="lead hero-a">A few friends who pack, move, mount TVs and build furniture.</p>
+        <p class="squad-line"><svg class="squad-ico" viewBox="0 0 200 92" role="img" aria-label="Four friends standing together" xmlns="http://www.w3.org/2000/svg"><g><circle cx="28" cy="27" r="13" fill="#0D5450"/><path d="M8,90 V56 Q8,43 21,43 H35 Q48,43 48,56 V90 Z" fill="#0D5450"/><circle cx="76" cy="21" r="14" fill="#2DA093"/><path d="M55,90 V52 Q55,38 69,38 H83 Q97,38 97,52 V90 Z" fill="#2DA093"/><circle cx="124" cy="21" r="14" fill="#D9A566"/><path d="M103,90 V52 Q103,38 117,38 H131 Q145,38 145,52 V90 Z" fill="#D9A566"/><circle cx="172" cy="27" r="13" fill="#0A3F3C"/><path d="M152,90 V56 Q152,43 165,43 H179 Q192,43 192,56 V90 Z" fill="#0A3F3C"/></g></svg><span>A few friends. One squad.</span></p>
         <div class="actions">
           <a class="btn btn-main" href="#contact">Get a free quote</a>
           <a class="btn btn-line" href="#services-page" data-nav="services">See all services</a>
