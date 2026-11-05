@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>DMV Setup Squad | Packing, Moving, Furniture Assembly &amp; TV Mounting</title>
-<meta name="description" content="We come to you. Packing, moving, furniture assembly and TV mounting in DC, Maryland and Virginia. Free quote.">
+<meta name="description" content="We come to you. Packing, moving help, furniture assembly and TV mounting for homes and businesses in DC, Maryland and Virginia. Free quote.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DMV Setup Squad">
 <meta property="og:title" content="DMV Setup Squad | We come to you">
@@ -294,6 +294,25 @@ footer .in{display:grid;gap:20px;padding-block:36px}
   summary::after{transition:transform .2s}
   .hero .in>*{animation:rise .6s ease-out both}
 }
+
+/* business section */
+.biz-intro{background:var(--surface);border:2px solid var(--line);border-left:6px solid var(--head);border-radius:14px;padding:clamp(20px,3vw,30px);margin:6px 0 22px;display:grid;gap:12px}
+.biz-intro h3{font-size:clamp(1.45rem,3.4vw,2rem)}
+.biz-intro p{color:var(--muted);font-size:1.05rem;max-width:62ch}
+.biz-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+@media (max-width:520px){.biz-actions .btn{flex:1 1 100%}}
+.biz-why{margin-top:28px;background:var(--sand);border-radius:14px;padding:clamp(20px,3vw,28px)}
+.biz-why>h3{font-size:1.4rem;margin-bottom:16px}
+.biz-why-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.biz-why-grid>div{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+.biz-why-grid .bico{width:44px;height:44px;border-radius:12px;background:var(--surface);color:var(--icon);display:grid;place-items:center}
+.biz-why-grid .bico svg{width:24px;height:24px}
+.biz-why-grid b{display:block;color:var(--head);font-family:var(--display);font-weight:800;font-size:1.05rem;line-height:1.2}
+.biz-why-grid .t{display:block;color:var(--muted);font-size:.95rem;margin-top:4px}
+.biz-cta{margin-top:36px;text-align:center;display:grid;gap:10px;justify-items:center}
+.biz-cta h3{font-size:1.4rem}
+.biz-cta p{color:var(--muted);max-width:52ch}
+.biz-cta .biz-actions{justify-content:center}
 </style>
 
 <!-- ===== HEADER ===== -->
@@ -323,8 +342,8 @@ footer .in{display:grid;gap:20px;padding-block:36px}
       <div>
         <div class="hero-top"><img class="hero-logo" src="hero-shield.webp" alt="DMV Setup Squad logo: Packing, Moving, TV Mounting, Furniture Assembly" width="520" height="622" fetchpriority="high" decoding="async"></div>
         <div class="hero-areas areas-mob" aria-label="Areas we serve"><p class="area-label"><span class="dot"></span>Our service area</p><div class="area-tags"><b class="area-tag">Washington DC</b><b class="area-tag">Maryland</b><b class="area-tag">Virginia</b></div></div>
-        <h1 class="hero-q">Moving or <span class="hl">setting up?</span></h1>
-        <p class="lead hero-a">A few friends who pack, move, mount, build.</p>
+        <h1 class="hero-q">Moving or <span class="hl">setting up?</span><br>We take care of it.</h1>
+        <p class="lead hero-a">Packing, moving help, TV mounting and furniture assembly for homes and businesses across DC, Maryland and Virginia.</p>
         <p class="squad-line"><svg class="squad-ico" viewBox="0 0 200 92" role="img" aria-label="Four friends standing together" xmlns="http://www.w3.org/2000/svg"><g><circle cx="28" cy="27" r="13" fill="#0D5450"/><path d="M8,90 V56 Q8,43 21,43 H35 Q48,43 48,56 V90 Z" fill="#0D5450"/><circle cx="76" cy="21" r="14" fill="#2DA093"/><path d="M55,90 V52 Q55,38 69,38 H83 Q97,38 97,52 V90 Z" fill="#2DA093"/><circle cx="124" cy="21" r="14" fill="#D9A566"/><path d="M103,90 V52 Q103,38 117,38 H131 Q145,38 145,52 V90 Z" fill="#D9A566"/><circle cx="172" cy="27" r="13" fill="#0A3F3C"/><path d="M152,90 V56 Q152,43 165,43 H179 Q192,43 192,56 V90 Z" fill="#0A3F3C"/></g></svg><span>A few friends. One squad.<small>Homes · Offices · Events</small></span></p>
         <div class="actions">
           <a class="btn btn-main" href="#contact">Get a free quote</a>
@@ -337,13 +356,13 @@ footer .in{display:grid;gap:20px;padding-block:36px}
           <a class="qs-card" href="#services-page" data-nav="services" data-anchor="home-s">
             <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
             <h3>Home services</h3>
-            <p>Packing, moving help, TV mounting, furniture assembly.</p>
+            <p>Packing, moving help, TV mounting and furniture assembly for your home.</p>
             <span class="arrow">See details →</span>
           </a>
           <a class="qs-card" href="#services-page" data-nav="services" data-anchor="business-s">
             <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span>
             <h3>Business &amp; events</h3>
-            <p>Office moves, trade-show booths, event setup.</p>
+            <p>Office moves, furniture assembly, trade-show booths and corporate events, scheduled around your hours.</p>
             <span class="arrow">See details →</span>
           </a>
         </div>
@@ -360,25 +379,25 @@ footer .in{display:grid;gap:20px;padding-block:36px}
         <a class="qs-card" href="#services-page" data-nav="services" data-anchor="home-s" style="align-items:center;text-align:center">
           <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8l9-4 9 4v8l-9 4-9-4V8z"/><path d="M3 8l9 4 9-4M12 12v8"/></svg></span>
           <h3>Packing</h3>
-          <p>We pack everything safely so nothing breaks in the move.</p>
+          <p>Careful, room-by-room packing so nothing breaks in the move.</p>
           <span class="arrow">Learn more →</span>
         </a>
         <a class="qs-card" href="#services-page" data-nav="services" data-anchor="home-s" style="align-items:center;text-align:center">
           <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="1" y="9" width="13" height="11" rx="1"/><path d="M14 13h4l3 4v3h-7V9"/><circle cx="5.5" cy="20.5" r="1.7"/><circle cx="17" cy="20.5" r="1.7"/></svg></span>
           <h3>Moving Help</h3>
-          <p>Loading, unloading, and placing items in your new space.</p>
+          <p>Loading, unloading and placing furniture in your new space.</p>
           <span class="arrow">Learn more →</span>
         </a>
         <a class="qs-card" href="#services-page" data-nav="services" data-anchor="home-s" style="align-items:center;text-align:center">
           <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
           <h3>TV Mounting</h3>
-          <p>Any wall, any TV size — secure and straight every time.</p>
+          <p>Secure, level and ready to watch, for all TV sizes and wall types.</p>
           <span class="arrow">Learn more →</span>
         </a>
         <a class="qs-card" href="#services-page" data-nav="services" data-anchor="home-s" style="align-items:center;text-align:center">
           <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
           <h3>Furniture Assembly</h3>
-          <p>IKEA, Wayfair, Amazon — we assemble it all for you.</p>
+          <p>Flat-pack furniture from IKEA, Wayfair, Amazon and more, built and placed for you.</p>
           <span class="arrow">Learn more →</span>
         </a>
       </div>
@@ -392,7 +411,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
         <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Every day, 5 AM – 11 PM</span></div>
         <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>One contact for the whole job</span></div>
         <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg><span>Free quote before we start</span></div>
-        <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/></svg><span>A few friends, one squad</span></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/></svg><span>Homes, offices and events</span></div>
       </div>
     </div>
   </section>
@@ -470,7 +489,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
         <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8l9-4 9 4v8l-9 4-9-4V8z"/><path d="M3 8l9 4 9-4M12 12v8"/></svg></div><h3>Packing</h3><p>We pack your home, room by room, so you don't have to.</p>
           <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Fragile items wrapped with care</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Boxes labeled clearly by room</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>A few rooms or the whole home</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>We bring packing supplies</li></ul>
           <a class="qlink" href="#contact" data-service="Packing" data-nav-contact>Get a quote for this →</a></article>
-        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3l3 13h10"/><rect x="9" y="7" width="7" height="7" rx="1"/><circle cx="10" cy="19.5" r="1.7"/><circle cx="16" cy="19.5" r="1.7"/></svg></div><h3>Moving help</h3><p>Extra hands for the heavy lifting.</p>
+        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3l3 13h10"/><rect x="9" y="7" width="7" height="7" rx="1"/><circle cx="10" cy="19.5" r="1.7"/><circle cx="16" cy="19.5" r="1.7"/></svg></div><h3>Moving help</h3><p>Strong, careful help with the heavy lifting.</p>
           <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Loading and unloading</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Heavy items up and down stairs</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Furniture placed in the right rooms</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Works with any truck or van you hire</li></ul>
           <a class="qlink" href="#contact" data-service="Moving help" data-nav-contact>Get a quote for this →</a></article>
         <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h3>TV mounting</h3><p>Your TV on the wall, level and ready to watch.</p>
@@ -494,35 +513,46 @@ footer .in{display:grid;gap:20px;padding-block:36px}
       </div>
 
       <h2 class="group-label" id="business-s" style="margin-top:52px"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg>For your business and events</h2>
-      <p class="group-note">Offices and events get the same squad: a few friends who work together, with one contact for the whole job.</p>
+      <div class="biz-intro">
+        <h3>Office moves and setup with minimal downtime</h3>
+        <p>We plan every business job around your schedule, not ours. Our crew works early mornings and evenings, so your team keeps working and disruption stays low. From a full office move to a trade-show booth, you get one point of contact, a clear quote before work starts, and a crew that arrives when we say we will.</p>
+        <div class="biz-actions">
+          <a class="btn btn-main" href="#contact" data-service="Office or event setup" data-nav-contact>Request a business quote</a>
+          <a class="btn btn-line" href="tel:+12025053133">Call (202) 505-3133</a>
+        </div>
+      </div>
       <div class="cards">
-        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div><h3>Office moves</h3><p>Move your office with less downtime.</p>
-          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Desks, chairs, files and equipment packed and labeled</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Loading, carrying and unloading</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Furniture placed where you need it</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Early-morning and evening times available</li></ul>
+        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></div><h3>Office moves</h3><p>Relocate your office with minimal disruption to your workday.</p>
+          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Desks, chairs, files and equipment packed and labeled</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Careful loading, carrying and unloading</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Furniture placed where you need it</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Early-morning and evening scheduling</li></ul>
           <a class="qlink" href="#contact" data-service="Office move" data-nav-contact>Get a quote for this →</a></article>
-        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-7h10v7"/><path d="M7 11h10"/></svg></div><h3>Trade-show booths</h3><p>Booth setup before the show. Take-down after.</p>
-          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Booth materials carried to your space</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Booth, displays and furniture set up</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Screens and TVs placed or mounted</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Take-down, packing and loading after the show</li></ul>
-          <a class="qlink" href="#contact" data-service="Trade-show booth" data-nav-contact>Get a quote for this →</a></article>
-        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Event setup</h3><p>Corporate events, parties and venues.</p>
-          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Tables, chairs and decor set up to your plan</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>TVs and screens for presentations</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Take-down and cleanup after the event</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>One crew from start to finish</li></ul>
-          <a class="qlink" href="#contact" data-service="Event setup" data-nav-contact>Get a quote for this →</a></article>
-        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8h18M5 8v12M19 8v12M5 13h6v7"/><path d="M14 5h4v3"/></svg></div><h3>Office furniture assembly</h3><p>New office, new furniture, or a fresh layout.</p>
-          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Desks, workstations, chairs and shelves</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Cabinets, storage units and meeting tables</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Lobby and meeting-room TV mounting</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Rearranging an office you already have</li></ul>
+        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8h18M5 8v12M19 8v12M5 13h6v7"/><path d="M14 5h4v3"/></svg></div><h3>Office furniture assembly</h3><p>New office, new furniture or a fresh layout, built and ready for your team.</p>
+          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Desks, workstations, chairs and shelves</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Cabinets, storage units and meeting tables</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Lobby and meeting-room TV mounting</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Reconfiguring an office you already have</li></ul>
           <a class="qlink" href="#contact" data-service="Office furniture assembly" data-nav-contact>Get a quote for this →</a></article>
+        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-7h10v7"/><path d="M7 11h10"/></svg></div><h3>Trade-show booth setup &amp; take-down</h3><p>Booth setup before the show opens and take-down after it closes.</p>
+          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Booth materials carried to your space</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Booth, displays and furniture assembled</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Screens and TVs placed or mounted</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Take-down, packing and loading after the show</li></ul>
+          <a class="qlink" href="#contact" data-service="Trade-show booth" data-nav-contact>Get a quote for this →</a></article>
+        <article class="card"><div class="ico-wrap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Corporate event setup</h3><p>Setup and take-down for corporate events, meetings and venues.</p>
+          <ul class="ticks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Tables, chairs and decor set up to your plan</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>TVs and screens ready for presentations</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Take-down and cleanup after the event</li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>One team from setup to take-down</li></ul>
+          <a class="qlink" href="#contact" data-service="Event setup" data-nav-contact>Get a quote for this →</a></article>
       </div>
 
-      <div class="why-band">
+      <div class="biz-why">
         <h3>Why businesses choose us</h3>
-        <div class="why-row">
-          <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open every day, 5 AM – 11 PM</span></div>
-          <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>One contact for the whole job</span></div>
-          <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg><span>Clear quote before work starts</span></div>
-          <div><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/></svg><span>A few friends, one team</span></div>
+        <div class="biz-why-grid">
+          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><p><b>Minimal downtime</b><span class="t">We schedule around your business, so the work happens before you open or after you close.</span></p></div>
+          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><p><b>Early and late availability</b><span class="t">Open every day, 5 AM to 11 PM, for early-morning and evening jobs.</span></p></div>
+          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><p><b>One point of contact</b><span class="t">You talk to one of us from the first call to the finished job. No call centers, no runaround.</span></p></div>
+          <div><span class="bico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></span><p><b>Reliable and clearly quoted</b><span class="t">A clear quote before work starts, and a crew that arrives when we say we will.</span></p></div>
         </div>
       </div>
 
-      <div style="margin-top:36px;text-align:center">
-        <p style="color:var(--muted);margin-bottom:16px">Ready to book, or have a question?</p>
-        <a class="btn btn-main" href="#contact" data-nav-contact>Get a free quote</a>
+      <div class="biz-cta">
+        <h3>Planning an office move or event?</h3>
+        <p>Tell us the date, location and size of the job. We will reply with a clear, free quote and a plan that fits around your hours.</p>
+        <div class="biz-actions">
+          <a class="btn btn-main" href="#contact" data-service="Office or event setup" data-nav-contact>Request a business quote</a>
+          <a class="btn btn-line" href="tel:+12025053133">Call (202) 505-3133</a>
+        </div>
       </div>
     </div>
   </section>
@@ -557,7 +587,7 @@ footer .in{display:grid;gap:20px;padding-block:36px}
           <details><summary>What are your hours?</summary><p>Every day, 5:00 AM to 11:00 PM. Early mornings and late evenings work well for businesses that want to avoid downtime during regular hours.</p></details>
           <details><summary>Do I need to supply anything?</summary><p>Not usually. We bring the tools and hardware for TV mounting and furniture assembly. For packing jobs, we can bring supplies — just ask when you request a quote.</p></details>
           <details><summary>Can I book more than one service in one visit?</summary><p>Yes. Many customers book packing and moving help together, or moving help and furniture assembly. Tell us what you need and we build one plan and one price.</p></details>
-          <details><summary>Do you work with businesses and events?</summary><p>Yes. We do office moves, office furniture assembly, trade-show booth setup and take-down, and corporate event setup. We work early mornings and evenings to fit around your schedule.</p></details>
+          <details><summary>Do you work with businesses and events?</summary><p>Yes. We handle office moves, office furniture assembly, trade-show booth setup and take-down, and corporate event setup. We work early mornings and evenings to fit around your schedule and keep downtime low.</p></details>
           <details><summary>Can you set up our trade-show booth?</summary><p>Yes. Tell us the show name, venue, dates and your booth size. We check the venue's rules before we confirm, since some convention centers have restrictions on who can set up booths.</p></details>
           <details><summary>Where do you work?</summary><p>Across the DMV: Washington DC, Maryland and Virginia. Not sure if we cover your area? Call or text us at (202) 505-3133.</p></details>
           <details><summary>How do I pay?</summary><p>We discuss payment when we give you your quote. We keep it simple and clear.</p></details>
@@ -580,8 +610,8 @@ footer .in{display:grid;gap:20px;padding-block:36px}
   <div class="page-hero">
     <div class="in">
       <p class="eyebrow"><span class="dot"></span>Local and reliable</p>
-      <h1>Meet the squad</h1>
-      <p>DMV Setup Squad is a few friends who get together to do this work. We are based right here in the DMV, and we know the streets, the buildings and the neighborhoods.</p>
+      <h1>About DMV Setup Squad</h1>
+      <p>We are a squad of friends based right here in the DMV. We know the streets, the buildings and the neighborhoods, so every job starts with a plan and ends with the space ready to use.</p>
     </div>
   </div>
 
@@ -590,9 +620,9 @@ footer .in{display:grid;gap:20px;padding-block:36px}
       <div class="about-lead">
         <div>
           <svg class="about-squad" viewBox="0 0 200 92" role="img" aria-label="Four friends standing together" xmlns="http://www.w3.org/2000/svg"><g><circle cx="28" cy="27" r="13" fill="#0D5450"/><path d="M8,90 V56 Q8,43 21,43 H35 Q48,43 48,56 V90 Z" fill="#0D5450"/><circle cx="76" cy="21" r="14" fill="#2DA093"/><path d="M55,90 V52 Q55,38 69,38 H83 Q97,38 97,52 V90 Z" fill="#2DA093"/><circle cx="124" cy="21" r="14" fill="#D9A566"/><path d="M103,90 V52 Q103,38 117,38 H131 Q145,38 145,52 V90 Z" fill="#D9A566"/><circle cx="172" cy="27" r="13" fill="#0A3F3C"/><path d="M152,90 V56 Q152,43 165,43 H179 Q192,43 192,56 V90 Z" fill="#0A3F3C"/></g></svg>
-          <h2>A few friends, real work</h2>
-          <p>DMV Setup Squad is a few friends who get together to help with your move or setup. We work in the DC, Maryland and Virginia area. When you call, you talk to one of us, and the squad shows up to do the job together.</p>
-          <p style="margin-top:12px">We started because too many people in our area were stuck waiting for big companies that showed up late, sent different crews every time, and charged prices that changed at the door. We do the opposite.</p>
+          <h2>A friendly team that does the job right</h2>
+          <p>DMV Setup Squad is a group of friends who work together on every move and setup in Washington DC, Maryland and Virginia. When you call, you talk to one of us, and the team shows up to do the job together.</p>
+          <p style="margin-top:12px">We started because too many people in our area were stuck with big companies that showed up late, sent a different crew every time, and changed the price at the door. We built DMV Setup Squad to do the opposite.</p>
           <p style="margin-top:12px">One crew. Clear price. Done right.</p>
           <div class="area-row">
             <span class="area-tag">Washington DC</span>
@@ -605,23 +635,23 @@ footer .in{display:grid;gap:20px;padding-block:36px}
       <div class="values">
         <div class="value-card">
           <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-          <h3>We show up on time</h3>
-          <p>Open every day, 5 AM to 11 PM. We confirm before the job and arrive when we say we will.</p>
+          <h3>Reliable and on time</h3>
+          <p>Open every day, 5 AM to 11 PM. We confirm the plan ahead of time and arrive when we say we will.</p>
         </div>
         <div class="value-card">
           <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></div>
           <h3>No surprise prices</h3>
-          <p>Your free quote is what you pay. We tell you the price before we start, not after.</p>
+          <p>Your free quote is what you pay. We agree on the price before work starts, not after.</p>
         </div>
         <div class="value-card">
           <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
           <h3>One contact</h3>
-          <p>You talk to one of us from the first call to job done. No call centers, no runaround.</p>
+          <p>You talk to one of us from the first call to the finished job. No call centers, no runaround.</p>
         </div>
         <div class="value-card">
           <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/></svg></div>
-          <h3>We treat your things with care</h3>
-          <p>Your furniture, your TVs, your boxes — we handle everything the way we would handle our own.</p>
+          <h3>Careful with your belongings</h3>
+          <p>Furniture, TVs, boxes or office equipment: we handle it all the way we would handle our own.</p>
         </div>
       </div>
 
@@ -713,7 +743,7 @@ function safePush(h){try{history.pushState(null,'',h);}catch(e){try{location.has
       safePush(hashKey ? hashKey[0] : '#');
       e.preventDefault(); return;
     }
-    var b = e.target.closest('[data-nav-contact]');
+    var b = e.target.closest('[data-nav-contact]:not([data-service])');
     if(b){
       showPage('home');
       safePush('#contact');
