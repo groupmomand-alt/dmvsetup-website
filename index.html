@@ -386,7 +386,7 @@ footer .in{display:grid;gap:14px;padding-block:22px}
 
 @media(max-width:820px){
 .n-hero{padding:26px 18px 96px}
-.n-in{grid-template-columns:104px 1fr;grid-template-areas:"pill pill" "h1 h1" "vis lead" "vis chk" "btns btns";gap:0 14px}
+.n-in{grid-template-columns:104px minmax(0,1fr);grid-template-areas:"pill pill" "h1 h1" "vis lead" "vis chk" "btns btns";gap:0 14px}
 .n-txt{display:contents}.n-pill{grid-area:pill;justify-self:start}.n-h1{grid-area:h1;margin:14px 0 14px}
 .n-lead{grid-area:lead;align-self:end;font-size:18px}.n-cm{grid-area:chk;margin-top:8px;align-self:start;justify-content:space-between;gap:8px}.n-chk{flex-direction:column;gap:5px;font-size:15px}.n-sqi{height:44px}
 .n-vis{grid-area:vis;align-self:center}.n-vis img{width:104px}.n-vis:before{width:130%}
@@ -399,6 +399,8 @@ footer .in{display:grid;gap:14px;padding-block:22px}
 .n-wg{grid-template-columns:1fr 1fr;gap:10px 8px}.n-wi b{font-size:14.5px}.n-wi .n-ic{width:34px;height:34px;border-radius:11px}.n-pc h4{font-size:17px}.n-pc+.n-pc{padding-left:12px}.n-pg{gap:0 12px}
 .n-ph small{display:block;margin:2px 0 0}.n-save{flex-wrap:nowrap}.n-save b{font-size:16px;display:block}.n-save span.n-t{display:block;margin:0;font-size:13.5px}}
 
+@media(max-width:820px){.n-hero{overflow-x:clip}.n-cm{min-width:0;flex-wrap:wrap}.n-sqi{height:34px;max-width:100%}.n-btns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}.n-b1,.n-b2{min-width:0;white-space:normal;padding:14px 6px;font-size:15px;line-height:1.2}}
+@media(max-width:380px){.n-b2{font-size:14px}}
 /* ===== header phone number (visible on phones too) ===== */
 @media (max-width:900px){.top .btn{padding:8px 12px;min-height:42px;font-size:.95rem;gap:6px}.top .btn svg{width:18px;height:18px}}
 @media (max-width:520px){.logo-mark{height:42px!important}.logo-name{font-size:1rem!important}.top .in{gap:8px}.top .in>a:first-child{gap:8px}.top .btn{padding:8px 10px;font-size:.88rem}}
