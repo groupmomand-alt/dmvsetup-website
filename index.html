@@ -28,6 +28,14 @@
       "url": "https://dmvsetup.com/",
       "telephone": "+1-202-505-3133",
       "email": "info@dmvsetup.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8300 Boone Blvd, Suite 500",
+        "addressLocality": "Vienna",
+        "addressRegion": "VA",
+        "postalCode": "22182",
+        "addressCountry": "US"
+      },
       "image": "https://dmvsetup.com/share-image-v3.png",
       "description": "Packing, moving help, TV mounting, furniture assembly, and office and event setup in Washington DC, Maryland, and Virginia. Open 24/7.",
       "openingHours": "Mo-Su 00:00-23:59",
@@ -603,6 +611,7 @@ footer.nfoot .in{display:flex;flex-direction:column;align-items:center;gap:8px;p
 .nf-links a{color:#fff;text-decoration:none;font-weight:600}
 .nf-links a:hover{text-decoration:underline}
 .nf-contact{margin:0}.nf-contact a{color:#fff;font-weight:700;text-decoration:none}
+.nf-address{max-width:36rem;line-height:1.4}
 footer.nfoot p{margin:0}
 footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
 
@@ -618,7 +627,8 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
 .n-svc{margin-bottom:10px}
 
 .chip-grid{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.chip{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;background:var(--tint);color:var(--head);border-radius:12px;padding:10px 4px 8px;min-height:72px}
+.chip-grid>li{display:flex;min-width:0}
+.chip{display:flex;flex:1;width:100%;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;background:var(--tint);color:var(--head);border-radius:12px;padding:10px 4px 8px;min-height:72px;text-decoration:none}
 .chip svg{width:22px;height:22px}
 .chip span{font:700 .78rem/1.15 var(--body)}
 .how-mini{max-width:1100px;margin:0 auto;padding:12px clamp(16px,5vw,64px) 4px}
@@ -697,11 +707,11 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
   html.motion .n-hero.ready .n-lead{transition-delay:.13s}
   html.motion .n-hero.ready .n-cm{transition-delay:.18s}
   html.motion .n-hero.ready .n-btns{transition-delay:.26s}
-  html.motion .chip.is-in:nth-child(2){transition-delay:.05s}
-  html.motion .chip.is-in:nth-child(3){transition-delay:.1s}
-  html.motion .chip.is-in:nth-child(4){transition-delay:.15s}
-  html.motion .chip.is-in:nth-child(5){transition-delay:.2s}
-  html.motion .chip.is-in:nth-child(6){transition-delay:.25s}
+  html.motion .chip-grid li:nth-child(2) .chip.is-in{transition-delay:.05s}
+  html.motion .chip-grid li:nth-child(3) .chip.is-in{transition-delay:.1s}
+  html.motion .chip-grid li:nth-child(4) .chip.is-in{transition-delay:.15s}
+  html.motion .chip-grid li:nth-child(5) .chip.is-in{transition-delay:.2s}
+  html.motion .chip-grid li:nth-child(6) .chip.is-in{transition-delay:.25s}
   html.motion .how-mini li.is-in:nth-child(2){transition-delay:.08s}
   html.motion .how-mini li.is-in:nth-child(3){transition-delay:.16s}
   html.motion .chip.is-in:hover,
@@ -709,12 +719,13 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
 
   .n-b1,.n-b2{display:inline-flex;align-items:center;justify-content:center;text-align:center}
   .chip,.how-mini li,.n-b1,.n-b2,.qa-btns .btn{transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease}
-  .chip:hover,.how-mini li:hover,.n-b1:hover,.n-b2:hover,.qa-btns .btn:hover,
+  .chip:hover,.chip:focus-visible,.how-mini li:hover,.n-b1:hover,.n-b2:hover,.qa-btns .btn:hover,
   .n-b1:focus-visible,.n-b2:focus-visible,.qa-btns .btn:focus-visible{
     transform:translateY(-3px);
   }
-  .chip:hover,.how-mini li:hover{box-shadow:0 8px 18px rgba(13,84,80,.12)}
+  .chip:hover,.chip:focus-visible,.how-mini li:hover{box-shadow:0 8px 18px rgba(13,84,80,.12)}
   html.motion .chip.is-in:hover,
+  html.motion .chip.is-in:focus-visible,
   html.motion .how-mini li.is-in:hover,
   html.motion .n-hero.ready .n-b1:hover,
   html.motion .n-hero.ready .n-b2:hover,
@@ -788,12 +799,12 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
     <div class="n-blk">
       <h2>Services</h2>
       <ul class="chip-grid">
-        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg><span>Packing</span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 7h12v9H2zM14 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg><span>Moving help</span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><span>TV mounting</span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/><path d="M4 14h16v3H4zM6 17v3M18 17v3"/></svg><span>Furniture assembly</span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg><span>Office setup</span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Event setup</span></li>
+        <li><a class="chip" href="#contact" data-service="Packing"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg><span>Packing</span></a></li>
+        <li><a class="chip" href="#contact" data-service="Moving help"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 7h12v9H2zM14 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg><span>Moving help</span></a></li>
+        <li><a class="chip" href="#contact" data-service="TV mounting"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><span>TV mounting</span></a></li>
+        <li><a class="chip" href="#contact" data-service="Furniture assembly"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/><path d="M4 14h16v3H4zM6 17v3M18 17v3"/></svg><span>Furniture assembly</span></a></li>
+        <li><a class="chip" href="#contact" data-service="Office setup"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg><span>Office setup</span></a></li>
+        <li><a class="chip" href="#contact" data-service="Event setup"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Event setup</span></a></li>
       </ul>
     </div>
   </section>
@@ -833,9 +844,10 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
           <label><span>What do you need? <small>(optional)</small></span>
               <select name="service">
                 <option value="">Choose a service</option>
-                <option>Moving help</option><option>Packing</option><option>Furniture assembly</option><option>TV mounting</option><option>Office or event setup</option><option>More than one service</option>
+                <option>Moving help</option><option>Packing</option><option>Furniture assembly</option><option>TV mounting</option><option>Office setup</option><option>Event setup</option><option>Office or event setup</option><option>More than one service</option>
               </select>
             </label>
+          <label><span>Preferred date <small>(optional)</small></span><input name="preferred_date" type="date"></label>
           <p class="err" id="err" role="alert" hidden></p>
           <button class="btn btn-main" type="submit">Send request</button>
         </div>
@@ -868,6 +880,7 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
       <a href="/privacy">Privacy</a>
     </nav>
     <p class="nf-contact"><a href="tel:+12025053133">(202) 505-3133</a> &middot; <a href="mailto:info@dmvsetup.com">info@dmvsetup.com</a></p>
+    <p class="nf-address">DMV Setup Squad Services, 8300 Boone Blvd, Suite 500, Vienna, VA 22182</p>
     <p>Washington, DC &middot; Maryland &middot; Virginia</p>
     <small>&copy; 2026 DMV Setup Squad</small>
   </div>
@@ -885,7 +898,7 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
 })();
 (function(){
   /* form */
-  function mapSvc(v){var m={'Office move':'Moving help','Trade-show booth':'Office or event setup','Event setup':'Office or event setup','Office furniture assembly':'Furniture assembly'};return m[v]||v;}
+  function mapSvc(v){var m={'Office move':'Moving help','Trade-show booth':'Office or event setup','Office furniture assembly':'Furniture assembly'};return m[v]||v;}
   var f=document.getElementById('callback'), err=document.getElementById('err');
   f.addEventListener('submit',function(e){
     e.preventDefault();
@@ -899,24 +912,36 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
     var btn=f.querySelector('button[type="submit"]'), th=document.getElementById('thanks');
     btn.disabled=true; btn.textContent='Sending...';
     var svc=f.elements.service.value||'(not chosen)', loc=f.elements.location.value.trim()||'(not given)';
-    var flds=[
-      {objectTypeId:'0-1',name:'firstname',value:f.elements.name.value.trim()},
-      {objectTypeId:'0-1',name:'phone',value:f.elements.phone.value.trim()},
-      {objectTypeId:'0-1',name:'message',value:'Service: '+svc+' | ZIP/city: '+loc}
-    ];
-    if(email) flds.push({objectTypeId:'0-1',name:'email',value:email});
-    fetch('https://api.hsforms.com/submissions/v3/integration/submit/247982841/c86a95f6-a677-48e5-9443-da21fafc9dfd',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({fields:flds,context:{pageUri:location.href,pageName:document.title}})
+    var date=f.elements.preferred_date?f.elements.preferred_date.value:'';
+    var msg='Service: '+svc+' | ZIP/city: '+loc+(date?' | Preferred date: '+date:'');
+    function fields(withDateProp){
+      var flds=[
+        {objectTypeId:'0-1',name:'firstname',value:f.elements.name.value.trim()},
+        {objectTypeId:'0-1',name:'phone',value:f.elements.phone.value.trim()},
+        {objectTypeId:'0-1',name:'message',value:msg}
+      ];
+      if(email) flds.push({objectTypeId:'0-1',name:'email',value:email});
+      if(withDateProp&&date) flds.push({objectTypeId:'0-1',name:'dmv_job_date',value:date});
+      return flds;
+    }
+    function post(flds){
+      return fetch('https://api.hsforms.com/submissions/v3/integration/submit/247982841/c86a95f6-a677-48e5-9443-da21fafc9dfd',{
+        method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({fields:flds,context:{pageUri:location.href,pageName:document.title}})
+      }).then(function(r){
+        return r.text().then(function(t){return {ok:r.ok,status:r.status,raw:t||''};});
+      });
+    }
+    post(fields(true)).then(function(res){
+      if(!res.ok&&res.status===400&&date) return post(fields(false));
+      return res;
+    }).then(function(res){
+      if(!res.ok) throw new Error('fail');
+      var j={};
+      try{if(res.raw) j=JSON.parse(res.raw);}catch(parseErr){j={};}
+      if(j){f.reset();th.firstChild.nodeValue='Thank you! We will contact you soon.';th.hidden=false;window.location.href='/thank-you';}
+      else{throw new Error('fail');}
     })
-      .then(function(r){
-        if(!r.ok) throw new Error('fail');
-        return r.json().catch(function(){return {};});
-      })
-      .then(function(j){
-        if(j){f.reset();th.firstChild.nodeValue='Thank you! We will contact you soon.';th.hidden=false;window.location.href='/thank-you';}
-        else{throw new Error('fail');}
-      })
       .catch(function(){err.textContent='Sorry, it did not send. Please call (202) 505-3133.';err.hidden=false;})
       .then(function(){btn.disabled=false;btn.textContent='Send request';});
   });
@@ -924,9 +949,20 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
   /* service qlinks preselect */
   document.querySelectorAll('[data-service]').forEach(function(a){
     if(!a.hasAttribute('data-nav-contact')){
-      a.addEventListener('click',function(){
-        var sel=document.getElementById('callback');
-        if(sel) sel.elements.service.value=mapSvc(a.getAttribute('data-service'));
+      a.addEventListener('click',function(ev){
+        var form=document.getElementById('callback');
+        if(!form) return;
+        var value=mapSvc(a.getAttribute('data-service'));
+        var field=form.elements.service;
+        var match=false;
+        for(var i=0;i<field.options.length;i++){if(field.options[i].value===value) match=true;}
+        if(match) field.value=value;
+        if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey||ev.button) return;
+        ev.preventDefault();
+        if(location.hash!=='#contact') history.pushState(null,'','#contact');
+        var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        field.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+        if(ev.detail===0){try{field.focus({preventScroll:true});}catch(err){field.focus();}}
       });
     }
   });
