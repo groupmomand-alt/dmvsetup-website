@@ -975,21 +975,23 @@ function safePush(h){try{history.pushState(null,'',h);}catch(e){try{location.has
     err.hidden=true;
     var btn=f.querySelector('button[type="submit"]'), th=document.getElementById('thanks');
     btn.disabled=true; btn.textContent='Sending...';
-    var d=new FormData();
-    d.append('access_key','613bea7c-840c-466c-b572-bcae43160d4a');
-    d.append('subject','New quote request - DMV Setup Squad');
-    d.append('from_name','DMV Setup Squad website');
-    d.append('name',f.elements.name.value.trim());
-    d.append('phone',f.elements.phone.value.trim());
-    d.append('email_address',email||'(not given)');
-    d.append('service',f.elements.service.value||'(not chosen)');
-    d.append('zip_or_city',f.elements.location.value.trim()||'(not given)');
-    d.append('botcheck','');
-    if(email) d.append('replyto',email);
-    fetch('https://api.web3forms.com/submit',{method:'POST',body:d})
-      .then(function(r){return r.json();})
+    var svc=f.elements.service.value||'(not chosen)', loc=f.elements.location.value.trim()||'(not given)';
+    var flds=[
+      {objectTypeId:'0-1',name:'firstname',value:f.elements.name.value.trim()},
+      {objectTypeId:'0-1',name:'phone',value:f.elements.phone.value.trim()},
+      {objectTypeId:'0-1',name:'message',value:'Service: '+svc+' | ZIP/city: '+loc}
+    ];
+    if(email) flds.push({objectTypeId:'0-1',name:'email',value:email});
+    fetch('https://api.hsforms.com/submissions/v3/integration/submit/247982841/c86a95f6-a677-48e5-9443-da21fafc9dfd',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({fields:flds,context:{pageUri:location.href,pageName:document.title}})
+    })
+      .then(function(r){
+        if(!r.ok) throw new Error('fail');
+        return r.json().catch(function(){return {};});
+      })
       .then(function(j){
-        if(j&&j.success){f.reset();th.firstChild.nodeValue='Thank you! We will contact you soon.';th.hidden=false;window.location.href='/thank-you';}
+        if(j){f.reset();th.firstChild.nodeValue='Thank you! We will contact you soon.';th.hidden=false;window.location.href='/thank-you';}
         else{throw new Error('fail');}
       })
       .catch(function(){err.textContent='Sorry, it did not send. Please call (202) 505-3133.';err.hidden=false;})
