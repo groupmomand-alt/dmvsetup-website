@@ -767,6 +767,13 @@ textarea{width:100%;font:500 1rem var(--body);color:var(--text);background:var(-
   .n-lead{font-size:16px}
   .n-cm{margin-top:4px}
 }
+
+.hire-mini{max-width:1100px;margin:0 auto;padding:30px clamp(16px,5vw,64px) 10px}
+.hire-card{background:#E9F7F3;border:1px solid #9ED7CD;border-radius:22px;padding:24px 26px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+.hire-card h2{font:800 1.5rem 'Bricolage Grotesque',sans-serif;color:#0D3F3B;margin:0 0 6px}
+.hire-card p{margin:0;font-size:16px;line-height:1.5;color:#1d2b29}
+.hire-card .n-b1{white-space:nowrap}
+@media(max-width:700px){.hire-card{grid-template-columns:1fr}.hire-card .n-b1{width:100%;text-align:center}}
 </style>
 
 <!-- ===== HEADER ===== -->
@@ -877,6 +884,15 @@ textarea{width:100%;font:500 1rem var(--body);color:var(--text);background:var(-
         <details><summary>When are you open?</summary><p>Open 24/7. Call or text anytime.</p></details>
         <details><summary>How do I ask for a quote?</summary><p>Call, text, email, or send the form.</p></details>
       </div>
+    </div>
+  </section>
+
+  <section class="hire-mini" id="jobs" aria-labelledby="jobs-h">
+    <div class="hire-card">
+      <div>
+        <h2 id="jobs-h">Join our squad</h2>
+      </div>
+      <a class="n-b1" href="/hiring">Apply to join</a>
     </div>
   </section>
 </main>
