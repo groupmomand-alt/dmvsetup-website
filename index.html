@@ -751,6 +751,22 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
 .chip>a:focus-visible{outline:3px solid #0D5450;outline-offset:2px}
 .chip{padding:0}
 .svc-all{display:inline-block;margin-top:12px;font-weight:700;color:#0D5450;text-decoration:underline;text-underline-offset:3px}
+
+textarea{width:100%;font:500 1rem var(--body);color:var(--text);background:var(--surface);border:2px solid var(--field-line);border-radius:12px;padding:12px 14px;resize:vertical;box-sizing:border-box}
+.n-hero{padding:26px clamp(16px,5vw,64px) 76px}
+.n-in{gap:28px}
+.n-h1{font:800 clamp(30px,3.6vw,46px)/1.06 Bricolage Grotesque,sans-serif;margin:10px 0 8px}
+.n-lead{font-size:17px}
+.n-vis img{width:min(100%,250px)}
+.n-sqi{height:40px}
+@media(max-width:820px){
+  .n-hero{padding:12px 14px 66px}
+  .n-in{grid-template-columns:86px minmax(0,1fr)}
+  .n-vis img{width:84px}
+  .n-h1{font-size:1.5rem;margin:4px 0 4px}
+  .n-lead{font-size:16px}
+  .n-cm{margin-top:4px}
+}
 </style>
 
 <!-- ===== HEADER ===== -->
@@ -842,6 +858,8 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
                 <option>Moving help</option><option>Packing</option><option>Furniture assembly</option><option>TV mounting</option><option>Office or event setup</option><option>More than one service</option>
               </select>
             </label>
+          <label><span>Preferred date <small>(optional)</small></span><input name="date" type="date"></label>
+          <label><span>Message <small>(optional)</small></span><textarea name="note" rows="3" placeholder="Size of home or event, how many items, access, anything we should know"></textarea></label>
           <p class="err" id="err" role="alert" hidden></p>
           <button class="btn btn-main" type="submit">Send request</button>
         </div>
@@ -904,11 +922,11 @@ footer.nfoot small{color:#9FC4BD;font-size:.85rem;margin-top:4px}
     err.hidden=true;
     var btn=f.querySelector('button[type="submit"]'), th=document.getElementById('thanks');
     btn.disabled=true; btn.textContent='Sending...';
-    var svc=f.elements.service.value||'(not chosen)', loc=f.elements.location.value.trim()||'(not given)';
+    var svc=f.elements.service.value||'(not chosen)', loc=f.elements.location.value.trim()||'(not given)', dt=f.elements.date.value||'(not given)', note=f.elements.note.value.trim()||'(none)';
     var flds=[
       {objectTypeId:'0-1',name:'firstname',value:f.elements.name.value.trim()},
       {objectTypeId:'0-1',name:'phone',value:f.elements.phone.value.trim()},
-      {objectTypeId:'0-1',name:'message',value:'Service: '+svc+' | ZIP/city: '+loc}
+      {objectTypeId:'0-1',name:'message',value:'Service: '+svc+' | ZIP/city: '+loc+' | Date: '+dt+' | Message: '+note}
     ];
     if(email) flds.push({objectTypeId:'0-1',name:'email',value:email});
     fetch('https://api.hsforms.com/submissions/v3/integration/submit/247982841/c86a95f6-a677-48e5-9443-da21fafc9dfd',{
